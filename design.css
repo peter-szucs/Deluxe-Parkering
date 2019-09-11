@@ -1,14 +1,46 @@
 {box-sizing: border-box;}
+.topgrid {
+    height: 20vh;
+    /*background-image: url(stad.jpg);
+    filter: blur(4px);
+    -webkit-filter: blur(4px);*/
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+        ),
+        url("stad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    }
+.linksgrid {
+    height: 50px;
+    background-color: black;
+    }
+.mainpagegrid {
+    height 65vh;
+    }
+.header h2 {
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 .headerimg {
-    padding: 30px; 
-    text-align: left;
+    /*padding: 70px; */
+    /*text-align: left;*/
     background-image: url("stad.jpg");
     filter: blur(4px);
     -webkit-filter: blur(4px);
-    height: 20%;
-    background-position: center;
+    /*height: 20vh;*/
+    /*background-position: center;*/
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+    background-clip: border-box;
+    }
 .header-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
@@ -16,7 +48,7 @@
   font-weight: bold;
   border: 2px solid #dddddd;
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
