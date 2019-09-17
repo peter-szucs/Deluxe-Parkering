@@ -22,6 +22,7 @@ body {
 .mainpagegrid {
     font-family: 'Gayathri', sans-serif;
     background-color: beige;
+    overflow: scroll;
     /*height: 100vh;*/
     /*float: left;
     background-size: cover;*/
@@ -33,6 +34,14 @@ body {
 .mainpagegrid a:hover {
     background-color: beige;
     color: navy;
+}
+.mpleftcol {
+    width: 45%;
+}
+.mprightcol {
+    position: relative;
+    float: right;
+    width: 55%;
 }
 .header h1 {
     font-family: 'Barlow', sans-serif;
@@ -86,6 +95,7 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     border: 2px solid crimson;
+    float: left;
 }
 .row:after {
     content: " ";
@@ -97,9 +107,6 @@ body {
 .blur {
     -webkit-filter: blur(4px);
     filter: blur(4px);}
-.container {
-    position: relative;
-}
 .subheadertext {
     position: absolute;
     top: 50%;
@@ -122,10 +129,18 @@ div.polaroid {
 }
 div.container {
     padding: 10px;
+    position: relative;
+}
+div.imgcontain {
+    position: relative;
+}
+div.imgcontain img {
+    border-radius: 8px;
 }
 .tint {
     position: relative;
     float: left;
+    display: block;
     /*margin-right: 20px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -155,4 +170,74 @@ div.container {
 }
 .t4:before {
     background: rgba(224,255,255, 0.5)
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+select {
+    width: 100%;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #B22222;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #800000;
+}
+
+div.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }

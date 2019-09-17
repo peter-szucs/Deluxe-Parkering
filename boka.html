@@ -21,57 +21,96 @@
         </div>
         <div class="mainpagegrid">
             <div class="card">
-                <div class="container">
-                    <img class="blur" src="parking.jpeg" width="100%"; style="border-radius: 8px";>
+                <div class="imgcontain">
+                    <img class="blur" src="parking.jpeg" alt="Parkering" width="100%";>
                     <div class="subheadertext"><h2>Boka parkering</h2></div>
                 </div>                
                 <h2>Boka parkering</h2>
                 <p>Våra grundpaket gör det möjligt att skräddarsy din upplevelse till precis dina egna behov.<br>
                 Välj bara ett baspaket, gör de tillägg du vill ha och skicka sedan in så kontaktar vi dig.<br>
                 Gå gärna in på <a href="tjanster.html">"Övriga tjänster"</a> för att läsa mer om de tillägg vi erbjuder.</p>
+                <h3>Drop-In parkering</h3>
+                <p>459 kr/timme<br>
+                Det ingår en kopp kaffe i vårt baristacafé och fri tillgång till laddning av din hybrid eller elbil.</p>
                 <h3>Grundpaket</h3>
-                <div class="polaroid">
-                    <div class="tint t1">
-                        <img src="packages.jpg" width="100%" style="display: block";>
-                    </div>
-                    <div class="container">
-                        <h4>Bronspaket. 1095 kr/mån</h4>
-                        <p>Garanterad parkeringsplats.<br>
-                        Dygnet-runt service</p>
-                    </div>
-                </div>
-                <br>
-                <div class="polaroid">
-                    <div  class="tint t2">
-                        <img src="packages.jpg" width="100%" style="display: block";>
-                    </div>
-                    <div class="container">
-                        <h4>Silverpaket. 1895 kr/mån</h4>
-                        <p>Bronspaket + Däckbyte + Oljeservice 1/år</p>
-                    </div>
-                </div>
-                <br>
-                <div class="polaroid">
-                    <div  class="tint t3">
-                        <img src="packages.jpg" width="100%" style="display: block";>
-                    </div>
-                    <div class="container">
-                        <h4>Guldpaket. 3195 kr/mån</h4>
-                        <p>Silverpaket + Tvätt vid varje parkeringstillfälle +
-                        tillgång till lounge på alla Deluxe Parkering</p>
-                    </div>
-                </div>
-                <br>
-                <div class="polaroid">
-                    <div  class="tint t4">
-                        <img src="packages.jpg" width="100%" style="display: block";>
-                    </div>
-                    <div class="container">
-                        <h4>Platinumpaket. 8245 kr/mån</h4>
-                        <p>Gulpaket + Personal shopper + PD Skräddare + Hunddagis + Barnpassning</p>
+                <div class="mprightcol">
+                    <h4>Bokningsformulär</h4>
+                    <p>Fyll i dina val och skicka in. Vi kontaktar dig med prisuppgift och överenskommelse per telefon.</p>
+                    <div class="form">
+                        <form action="/action_page.php">
+                            <label for="fnamn">Förnamn</label>
+                            <input type="text" id="fnamn" name="fornamn" placeholder="förnamn..">
+
+                            <label for="enamn">Efternamn</label>
+                            <input type="text" id="enamn" name="efternamn" placeholder="efternamn..">
+                            <label for="tel">Telefonnummer</label>
+                            <input type="text" id="tel" name="telefon" placeholder="0701234567..">
+                            <label for="mail">Mail</label>
+                            <input type="text" id="mail" name="mailadress" placeholder="deluxeparkering@deluxepark.se.."><br><br>
+                            <label>Paketlösning</label>
+                            <select name="package">
+                                <option value="Inget">Inget paket</option>                                
+                                <option value="Bronspaket">Bronspaket</option>
+                                <option value="Silverpaket">Silverpaket</option>
+                                <option value="Guldpaket">Guldpaket</option>
+                                <option value="Platinumpaket">Platinumpaket</option>
+                            </select>
+                            <br><br>
+                            <label for="options">Tillägg</label><br><br>
+                            <input type="checkbox" id="tvatt" name="op1" value="tvattop">Tvättning<br>
+                            <input type="checkbox" id="rekond" name="op2" value="rekondop">Rekond<br>
+                            <input type="checkbox" id="personalshop" name="op3" value="psop">Personal Shopper<br>
+                            <input type="checkbox" id="scenting" name="op4" value="luktop">Doftpaket<br>
+                            <br><br>
+                            <input type="submit">
+                        </form>
                     </div>
                 </div>
-                <br>
+                <div class="mpleftcol">
+                    <div class="polaroid">
+                        <div class="tint t1">
+                            <img src="packages.jpg" width="100%";>
+                        </div>
+                        <div class="container">
+                            <h4>Bronspaket. 1095 kr/mån</h4>
+                            <p>Garanterad parkeringsplats.<br>
+                            Dygnet-runt service</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="polaroid">
+                        <div  class="tint t2">
+                            <img src="packages.jpg" width="100%";>
+                        </div>
+                        <div class="container">
+                            <h4>Silverpaket. 1895 kr/mån</h4>
+                            <p>Bronspaket + Däckbyte + Oljeservice 1/år</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="polaroid">
+                        <div  class="tint t3">
+                            <img src="packages.jpg" width="100%";>
+                        </div>
+                        <div class="container">
+                            <h4>Guldpaket. 3195 kr/mån</h4>
+                            <p>Silverpaket + Tvätt vid varje parkeringstillfälle +
+                            tillgång till lounge på alla Deluxe Parkering</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="polaroid">
+                        <div  class="tint t4">
+                            <img src="packages.jpg" width="100%";>
+                        </div>
+                        <div class="container">
+                            <h4>Platinumpaket. 8245 kr/mån</h4>
+                            <p>Gulpaket + Personal shopper + PD Skräddare + Hunddagis + Barnpassning</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                
             </div>
         </div>
     </body>
