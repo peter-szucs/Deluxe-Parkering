@@ -123,10 +123,12 @@ body {
     clear: both;}
 .opacity {
     -webkit-filter: opacity(70%);
-    filter: opacity(70%);}
+    filter: opacity(70%);
+}
 .blur {
     -webkit-filter: blur(4px);
-    filter: blur(4px);}
+    filter: blur(4px);
+}
 .subheadertext {
     position: absolute;
     top: 50%;
